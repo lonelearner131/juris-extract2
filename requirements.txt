@@ -1,18 +1,15 @@
-# Web Framework and Server
-fastapi==0.136.1
-uvicorn==0.46.0
+# Web Framework & Server
+fastapi==0.111.0
+uvicorn==0.30.1
+python-multipart==0.0.9
+pydantic==2.7.3
 
-# Document Parsing and PDF handling
-pymupdf==1.27.2.3
+# Document Processing & OCR
+PyMuPDF==1.24.5      # For fitz (Digital extraction)
+pytesseract==0.3.10  # Google Tesseract wrapper (Scanned fallback)
+Pillow==10.3.0       # Image processing for OCR
 
-# Vector Database and Embeddings
-chromadb==1.5.8
-sentence-transformers==5.4.1
-
-# LLM Integration and Schema Validation
-groq==1.2.0
-instructor==1.7.0
-pydantic==2.13.3
-
-# Environment Management
-python-dotenv==1.2.2
+# AI Models & Logic
+chromadb==0.5.0      # Local Vector Database for RAG
+groq==0.8.0          # Llama-3 API client
+sarvamai==0.1.0      # Official Indic language translation SDK
