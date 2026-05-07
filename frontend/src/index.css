@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix for react-pdf text highlighting layer */
+.react-pdf__Page__textContent {
+  border: 1px solid transparent;
+}
